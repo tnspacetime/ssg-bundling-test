@@ -1,0 +1,18 @@
+{
+  "src/assets/react.svg": {
+    "file": "assets/react-CHdo91hT.svg",
+    "src": "src/assets/react.svg"
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "css": [
+      "assets/index-BoQsawTv.css"
+    ],
+    "assets": [
+      "assets/react-CHdo91hT.svg"
+    ]
+  }
+}
