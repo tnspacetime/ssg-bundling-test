@@ -1,4 +1,4 @@
-# Vite + + SSG RSC + Cloudflare Workers 
+# Vite + SSG + RSC + Cloudflare Workers 
 
 This repo demonstrates ssg in a rsc environment that can be deployed on cloudflare, based on 
 [examples/starter](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc/examples/starter) integrated with [`@cloudflare/vite-plugin`](https://github.com/cloudflare/workers-sdk/tree/main/packages/vite-plugin-cloudflare) and [ssg](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc/examples/ssg). 
