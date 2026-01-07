@@ -1,16 +1,9 @@
-# Vite + RSC + Cloudflare Workers
+# Vite + + SSG RSC + Cloudflare Workers 
 
-https://vite-rsc-starter.hiro18181.workers.dev
+This repo demonstrates ssg in a rsc environment that can be deployed on cloudflare, based on 
+[examples/starter](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc/examples/starter) integrated with [`@cloudflare/vite-plugin`](https://github.com/cloudflare/workers-sdk/tree/main/packages/vite-plugin-cloudflare) and [ssg](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc/examples/ssg). 
 
-[examples/starter](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc/examples/starter) integrated with [`@cloudflare/vite-plugin`](https://github.com/cloudflare/workers-sdk/tree/main/packages/vite-plugin-cloudflare).
-
-The difference from [examples/react-router](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc/examples/react-router) is that this doesn't require two workers.
-
-- RSC environment always runs on Cloudflare Workers.
-- During development, SSR environment runs as Vite's default Node environment.
-- During production, SSR environment build output is directly imported into RSC environment build and both codes run on the same worker.
-
-Such communication mechanism is enabled via `rsc({ loadModuleDevProxy: true })` plugin option.
+It adds a special build command that shakes off static sources from the rsc bundle, helping the bundle to say small. 
 
 ```sh
 # run dev server
